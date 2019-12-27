@@ -1,0 +1,31 @@
+/* ==UserStyle==
+@name           GitHub Font
+@namespace      https://github.com/chandr3sh
+@version        0.1.0
+@description    Change font style on GitHub (adapted from GitHub-Dark)
+@author         Chandresh
+@homepageURL    https://github.com/chandr3sh/GitHub-Font
+@supportURL     https://github.com/chandr3sh/GitHub-Font/issues
+@updateURL      https://raw.githubusercontent.com/chandr3sh/GitHub-Font/master/github-font.user.css
+@license        CC-BY-SA-4.0
+@preprocessor   stylus
+@var text fontPref "Font" "Fira Code"
+@var range fontSizePref "Font Size" [12, 8, 18, 1, "px"]
+@var number tabSizePref "Tab Size" [2, 1, 8, 1]
+==/UserStyle== */
+@-moz-document regexp("^https?://((gist|guides|help|lab|launch-editor|raw|resources|status|developer|support)\\.)?github\\.com/((?!generated_pages/preview).)*$"),
+domain("githubusercontent.com"),
+domain("graphql-explorer.githubapp.com"),
+domain("www.githubstatus.com") {
+    
+    pre, code, tt, kbd:not(.badmono), samp, .blob-code, .file-data pre, .line-data,
+    #gist-form .file .input textarea, .blob-code-inner {
+        font-family: fontPref, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace !important;
+        font-size: fontSizePref !important;
+    }
+    
+    pre, .highlight, .diff-table, .tab-size {
+        tab-size: tabSizePref !important;
+        -moz-tab-size: tabSizePref !important;
+    }
+}
