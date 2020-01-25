@@ -9,7 +9,7 @@
 @updateURL      https://raw.githubusercontent.com/chandr3sh/GitHub-Font/master/github-font.user.css
 @license        CC-BY-SA-4.0
 @preprocessor   stylus
-@var text fontPref "Font" "Fira Code"
+@var text fontPref "Font" "Menlo"
 @var range fontSizePref "Font Size" [12, 8, 18, 1, "px"]
 @var number tabSizePref "Tab Size" [2, 1, 8, 1]
 ==/UserStyle== */
